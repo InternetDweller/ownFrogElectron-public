@@ -1,0 +1,50 @@
+.drop {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background: rgb(129, 213, 243);
+    width: 2px;
+    height: 10px;
+    transform-origin: bottom;
+    animation: animateRain 2s linear infinite;
+}
+@keyframes animateRain {
+    0% {
+        transform: translateY(0) scaleY(1);
+    }
+    70% {
+        transform: translateY(220px) scaleY(1);
+    }
+    80% {
+        transform: translateY(220px) scaleY(0.2);
+    }
+    100% {
+        transform: translateY(220px) scaleY(0.2);
+    }
+}
+
+.sdrop {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    background: rgb(255, 255, 255);
+    width: 14px;
+    height: 14px;
+    border-radius: 25px;
+    transform-origin: bottom;
+    animation: animateSnow 4s linear infinite;
+}
+@keyframes animateSnow {
+    0% {
+        transform: translateY(0) scaleY(1);
+    }
+    70% {
+        transform: translateY(230px) scaleY(1);
+    }
+    80% {
+        transform: translateY(230px) scaleY(0.2);
+    }
+    100% {
+        transform: translateY(230px) scaleY(0.2);
+    }
+}

@@ -1,0 +1,18 @@
+body {
+    user-select: none;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.developer {
+	text-align: center;
+}
+
+.green {
+	color: #2a982a;
+	font-weight: bold;
+}
+
+.red {
+	color: #ac3232;
+	font-weight: bold;
+}

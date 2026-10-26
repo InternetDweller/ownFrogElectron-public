@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/weather.css" />
+  <link rel="stylesheet" href="css/toastify.css" />
+  <script src="js/renderer.js" defer></script>
+  <title>Личная лягушка</title>
+</head>
+<body>
+    <div id="rain"></div>
+    <div class="frogandstats">
+        <div class="frogimg">
+            <img src="../assets/01-baby.png" />
+        </div>
+        <div class="rightBlock">
+            <div class="levelBlock">
+                <div>Уровень <span id="Span_Level">1</span> (<span id="Span_Stage">ребёнок</span>)</div>
+                <div>До следующего уровня: <span id="Span_UntilNext">5</span> опыта</div>
+            </div>
+            <div class="statsBlock">
+                <div class="feed">
+                    <div>Сытость:</div>
+                    <!-- <div><span id="Span_Feed">100</span> %</div> -->
+                    <div class="progress-outer">
+                        <span class="percent"><span id="Span_Feed">100</span> %</span>
+                        <div class="progress-inner" id="Progress_Feed"></div>
+                    </div>
+                    <button id="Button_Feed">Кормить (-1🦟)</button>
+                </div>
+                <div class="play">
+                    <div>Настроение:</div>
+                    <!-- <div><span id="Span_Play">100</span> %</div> -->
+                    <div class="progress-outer">
+                        <span class="percent"><span id="Span_Play">100</span> %</span>
+                        <div class="progress-inner" id="Progress_Play"></div>
+                    </div>
+                    <button id="Button_Play">Играть (-1🦟)</button>
+                </div>
+            </div>
+            <div class="envBlock">
+                <table class="Table_EnvBlock">
+                    <tr title="Время">
+                        <td id="Emoji_Time">⏰</td>
+                        <td class="Time_Col2"><span id="Span_Time"></span></td>
+                    </tr>
+                    <tr title="Дата">
+                        <td>📅</td>
+                        <td class="Time_Col2"><span id="Span_Date"></span></td>
+                    </tr>
+                </table>
+                <div class="weather">
+                    <table class="Table_EnvBlock">
+                        <tr title="Температура">
+                            <td>🌡️</td>
+                            <td class="Time_Col2"><span id="Span_Temp"></span> °C</td>
+                        </tr>
+                        <tr title="Дождь">
+                            <td>☔</td>
+                            <td class="Time_Col2"><span id="Span_Rain"></span> мм</td>
+                        </tr>
+                        <tr title="Снег">
+                            <td>❄️</td>
+                            <td class="Time_Col2"><span id="Span_Snow"></span> см</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div title="Комары" style="width:40px">🦟: <span id="Span_Points">5</span></div>
+    <input id="Input_Task" placeholder="Новая задача" /> <button id="Button_Add">Добавить</button>
+    <table id="Table_Tasks">
+        <tr>
+            <th class="col1"><b>Задача</b></th>
+            <th class="col2"><b>Сделано</b></th>
+            <th class="col2"><b>Удалить</b></th>
+        </tr>
+    </table>
+    <div class="debugButtons">
+        <button id="DEV_Level1">To level 1 [dev]</button>
+        <button id="DEV_Level3">To level 3 [dev]</button>
+        <button id="DEV_Level5">To level 5 [dev]</button>
+        <button id="DEV_LevelUp">Level up [dev]</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    user-select: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+button {
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid #3d9249;
+    box-shadow: #ebffef 0 1px 0 0 inset;
+    background: #c2f8cb;
+    color: #206829;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background: #9dd6a7;
+    color: #185220;
+}
+
+.title {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    padding: 5px
+}
+
+#Button_Save {
+    margin-top: 10px;
+}
+
+.info {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: #bdbdbd;
+    font-size: 15px;
+}

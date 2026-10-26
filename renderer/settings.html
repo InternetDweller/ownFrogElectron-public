@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <script src="js/settings.js" defer></script>
+    <title>Настройки</title>
+</head>
+<body>
+    <div class="title">Настройки</div>
+    <table>
+        <tr>
+            <td>Визуальные осадки</td>
+            <td>
+                <label>
+                    <input class="toggle_input" type="checkbox" id="visualWeather" />
+                    <div class="toggle_fill"></div>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Разный цвет фона</td>
+            <td>
+                <label>
+                    <input class="toggle_input" type="checkbox" id="backgroundDiffColour" />
+                    <div class="toggle_fill"></div>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <button id="Button_Save">Сохранить</button>
+    <div class="info">Для применения настроек перезапустите приложение</div>
+</body>
+</html>

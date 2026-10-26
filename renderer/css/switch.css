@@ -1,0 +1,62 @@
+:root {
+    --width: 40px;
+    --height: calc(var(--width) / 1.7);
+    --offset: 96.05%; /* offset = 3277 : height ||| if changing height */
+    --border-radius: calc(var(--height) / 2);
+    --speed: .3s;
+
+    --off-colour: grey;
+    --off-colour-hover: rgb(100, 100, 100);
+    /*--on-colour: #2880e6;
+    --on-colour-hover: #2068bb;*/
+    --on-colour: #3cb565;
+    --on-colour-hover: #1a8f3f;
+}
+
+.toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle_input {
+    display: none;
+}
+
+.toggle_fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background: var(--off-colour);
+    transition: background var(--speed);
+    cursor: pointer;
+}
+
+.toggle_fill:hover {
+    background: var(--off-colour-hover);
+}
+
+.toggle_input:checked ~ .toggle_fill {
+    background: var(--on-colour);
+}
+
+.toggle_input:checked ~ .toggle_fill:hover {
+    background: var(--on-colour-hover);
+}
+
+.toggle_fill::after {
+
+    content: "";
+    position: absolute;
+    top: 13.5%;
+    left: 8%;
+    height: calc(var(--height) * 0.73);
+    width: calc(var(--height) * 0.73);
+    background: white;
+    border-radius: var(--border-radius);
+    transition: transform var(--speed);
+}
+
+.toggle_input:checked ~ .toggle_fill::after {
+    transform: translate(var(--offset), 0);
+}

@@ -1,0 +1,220 @@
+body {
+    background: #00aaaa;
+    user-select: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: none;
+}
+
+#Table_Tasks {
+    width: 100%;
+    visibility: hidden;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#Table_Tasks td {
+    user-select: text;
+    padding: 5px 5px;
+}
+
+#Table_Tasks tbody th {
+    padding: 3px 5px;
+    background-color: #017979;
+    color: #bfecee;
+}
+
+#Table_Tasks tbody tr {
+    border-bottom: 2px solid #035757;
+}
+
+#Table_Tasks tbody tr:last-of-type {
+    border-bottom: 3px solid #035757;
+}
+
+#Table_Tasks tbody tr:nth-of-type(even) {
+    /*background-color: #53aeae;*/
+    background-color: #0000001c;
+}
+
+/*#Table_Tasks tbody tr:nth-of-type(odd) {
+    background-color: #429696;
+}*/
+
+.frogandstats {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 220px;
+}
+
+.rightBlock {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.levelBlock {
+    background-color: #88d8db;
+    border-radius: 60px;
+    padding: 3px;
+}
+
+.statsBlock, .envBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*height: 73px;*/
+    justify-content: space-around;
+}
+
+.statsBlock {
+    /*background: red;*/
+    background-color: #88dba8;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.envBlock {
+    /*background: blue;
+    color: white;*/
+    /*background: rgba(203, 203, 203, 0.534);
+    background-blend-mode:darken;*/
+    background-color: #83bbbc;
+    border-radius: 60px;
+}
+
+.levelBlock, .feed, .play {
+    text-align: center;
+}
+
+.weather {
+    width: 25%;
+}
+
+.Table_EnvBlock {
+    text-align: center;
+}
+
+.Time_Col2 {
+    text-align: left;
+}
+
+.col1 {
+    text-align: center;
+    width: 100%;
+}
+
+.col2 {
+    text-align: center;
+}
+
+input[type=checkbox] {
+    transform: scale(1.3);
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+
+.tasks {
+    background-size: 25px !important;
+    width: 25px;
+    height: 25px;
+}
+
+.hzzzz { /* НЕ УБИРАТЬ центрирует кнопки в таблице */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.done {
+    background-image: url('../images/check_green.png');
+    margin: 3px 0px 3px 0px;
+}
+
+.delete {
+    background: url('../images/check_red.png');
+    margin: 3px 0px 3px 0px;
+}
+
+.done:hover {
+    cursor: pointer;
+    background: url('../images/check_green_hover.png');
+}
+
+.delete:hover {
+    cursor: pointer;
+    background: url('../images/check_red_hover.png');
+}
+
+button {
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    /*background: yellowgreen;
+    font-size: 0.95em;
+    padding: 3px;
+    transition: linear .1s;*/
+    border: 2px solid #3d9249;
+    box-shadow: #ebffef 0 1px 0 0 inset;
+    background: #c2f8cb;
+    color: #206829;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    /*border-radius: 10px;
+    background: rgb(121, 162, 40);*/
+    background: #9dd6a7;
+    color: #185220;
+}
+
+button:active {
+    box-shadow: #7b907f 0 1px 0 0 inset;
+}
+
+.progress-outer {
+    display: block;
+    border-radius: 15px;
+    z-index: 1; /* чтобы не перекрывало осадки */
+    position: relative;
+    width: 120px;
+    height: 20px;
+    background: rgb(208, 208, 208);
+    margin: 5px 0 5px 0;
+}
+
+.progress-inner {
+    display: block;
+    border-radius: 15px;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    transition: ease-out .3s;
+}
+
+.percent {
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    bottom: 2%;
+    mix-blend-mode: difference;
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+#Span_Time {
+    font-size: 30px;
+}
+
+#Emoji_Time {
+    font-size: 20px;
+}
+
+.debugButtons {
+    display: block;
+}
